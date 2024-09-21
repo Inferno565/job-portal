@@ -42,13 +42,20 @@ export default function Sidebar() {
             <Accordion collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-base">
+                  For Employer
+                </AccordionTrigger>
+                <AccordionContent>Login </AccordionContent>
+                <AccordionContent>Signup</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-base">
                   Full Time Jobs
                 </AccordionTrigger>
                 <AccordionContent>Data Science Roles </AccordionContent>
                 <AccordionContent>Machine Learning Roles </AccordionContent>
                 <AccordionContent>Data Science Roles </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-2">
+              <AccordionItem value="item-3">
                 <AccordionTrigger className="text-base">
                   Internships
                 </AccordionTrigger>
@@ -56,7 +63,7 @@ export default function Sidebar() {
                 <AccordionContent>Remote </AccordionContent>
                 <AccordionContent>With Job offfer </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-3">
+              <AccordionItem value="item-4">
                 <AccordionTrigger className="text-base">More</AccordionTrigger>
                 <AccordionContent>Data Science Roles </AccordionContent>
                 <AccordionContent>Machine Learning Roles </AccordionContent>

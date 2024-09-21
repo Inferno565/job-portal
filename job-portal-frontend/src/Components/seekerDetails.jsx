@@ -19,9 +19,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-export default function RegisterForm() {
+export default function SeekerDetails() {
   return (
-    <Card className="mx-auto">
+    <Card className="mx-auto max-w-sm mt-[50px]">
       <CardHeader>
         <CardTitle className="text-xl">Enter Your Details</CardTitle>
         <CardDescription>Enter your information</CardDescription>
@@ -62,27 +62,15 @@ export default function RegisterForm() {
                 <SelectValue placeholder="Status" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="light">
-                  Experienced (Have work or internship experience)
-                </SelectItem>
-                <SelectItem value="dark">
-                  Fresher (Completed Graduation)
-                </SelectItem>
-                <SelectItem value="system">
-                  Student (Enrolled in a course)
-                </SelectItem>
+                <SelectItem value="light">Experienced (Have work or internship experience)</SelectItem>
+                <SelectItem value="dark">Fresher (Completed Graduation)</SelectItem>
+                <SelectItem value="system">Student (Enrolled in a course)</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
-          <Link to="/">
-            <Button type="submit" className="w-full">
-              Create an account
-            </Button>
-          </Link>
-          <Button variant="outline" className="w-full">
-            Continue with Google
-            <img src="src\assets\google.png" alt="" className="w-5 m-2" />
+          <Button type="submit" className="w-full">
+            Create an account
           </Button>
         </div>
         <div className="mt-4 text-center text-sm">
