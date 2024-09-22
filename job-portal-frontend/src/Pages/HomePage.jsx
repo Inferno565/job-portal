@@ -42,7 +42,7 @@ export default function HomePage() {
         <div className="w-full">
           <CardFlow />
         </div>
-        <ThemeToggle/>
+
       </main>
     </>
   );

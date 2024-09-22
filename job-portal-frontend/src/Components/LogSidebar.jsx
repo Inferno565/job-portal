@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { Menu, MoonIcon, User } from "lucide-react";
+import { LogOutIcon, Menu, MoonIcon, User } from "lucide-react";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -15,10 +16,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import { Switch } from "./ui/switch";
 import ThemeToggle from "./ThemeToggle";
-export default function Sidebar() {
+export default function LogSidebar() {
   return (
     <>
       <Sheet>
@@ -29,11 +31,12 @@ export default function Sidebar() {
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
-            <SheetTitle>
-              <Button variant="muted" className="text-lg">
-                <User />
-                Login/Signup
-              </Button>
+            <SheetTitle className="flex flex-row items-center gap-3">
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              John Doe
             </SheetTitle>
             <SheetDescription>
               <hr />
@@ -43,10 +46,13 @@ export default function Sidebar() {
             <Accordion collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-base">
-                  For Employer
+                  My Profile
                 </AccordionTrigger>
-                <AccordionContent>Login </AccordionContent>
-                <AccordionContent>Signup</AccordionContent>
+                <AccordionContent>Resume</AccordionContent>
+                <AccordionContent>Applications</AccordionContent>
+                <AccordionContent>Saved Jobs</AccordionContent>
+                <AccordionContent>My Account</AccordionContent>
+                <AccordionContent>Settings</AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="text-base">Jobs</AccordionTrigger>
@@ -74,7 +80,17 @@ export default function Sidebar() {
                 <AccordionContent>Data Science Roles </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="flex-row gap-2 flex items-center mt-4 justify-evenly ">
+              <ThemeToggle />
+              Toggle Dark/Light Mode
+              {/* to be removed */}
+            </div>
           </div>
+          <SheetFooter className="mt-4">
+            <Button className="flex flex-row gap-3">
+              <LogOutIcon /> Log out
+            </Button>
+          </SheetFooter>
         </SheetContent>
       </Sheet>
     </>
