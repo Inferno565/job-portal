@@ -4,6 +4,7 @@ import React from 'react'
 import { Button } from '@/Components/ui/button';
 import { Input } from '@/Components/ui/input';
 import { MapPin, Search } from 'lucide-react';
+import JobComponent from '@/Components/JobComponent';
 export default function ListingPage() {
   return (
     <>
@@ -35,6 +36,9 @@ export default function ListingPage() {
       <main className="p-12 flex flex-row">
         <div className="w-[300px]">
           <FilterCard />
+        </div>
+        <div className='p-4'>
+         <JobComponent/>
         </div>
       </main>
     </>
