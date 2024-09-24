@@ -8,7 +8,7 @@ import {
 import { Button } from "./ui/button";
 export default function RegCard({ title, path }) {
   return (
-    <Card className="flex flex-col items-center">
+    <Card className="flex flex-col items-center transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>

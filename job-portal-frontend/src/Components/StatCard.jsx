@@ -11,7 +11,7 @@ import { Progress } from "@/components/ui/progress";
 
 export default function StatCard({ title, value, path }) {
   return (
-    <Card className="w-fit">
+    <Card className="w-fit transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
       {/* <CardHeader>
         <CardDescription>{title}</CardDescription>
       </CardHeader> */}

@@ -75,7 +75,7 @@ export default function CardFlow() {
 
   return (
     <div className="relative md:p-10">
-      <Card className="shadow-none border-0 bg-secondary">
+      <Card className="shadow-none border-0 bg-secondary ">
         <CardHeader>
           <CardTitle className=" text-3xl md:text-5xl text-center">
             Best Work Environments
