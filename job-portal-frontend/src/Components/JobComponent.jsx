@@ -80,8 +80,8 @@ const trendingJobs = [
 
 export default function JobComponent() {
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="py-10 sm:px-8 lg:px-8 md:w-[950px] w-[350px]">
+      <div>
         {/* <h2 className="text-3xl font-bold text-gray-900 mb-6">Trending Jobs</h2> */}
         <div className="flex flex-col gap-3">
           {trendingJobs.map((job, index) => (
@@ -123,7 +123,7 @@ export default function JobComponent() {
                   </span>
                 </div>
               </div>
-              <p className="text-gray-700 mb-4">{job.description}</p>
+              <p className="text-gray-700 mb-4 hidden md:block">{job.description}</p>
               <div className="flex justify-between items-center">
                 {/* <Link
                   href={/artisan/jobPortal/${encodeURIComponent(job.title)}}

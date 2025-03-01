@@ -5,13 +5,15 @@ import { Button } from '@/Components/ui/button';
 import { Input } from '@/Components/ui/input';
 import { MapPin, Search } from 'lucide-react';
 import JobComponent from '@/Components/JobComponent';
+import DashSearch from '@/Components/DashSearch';
+import FilterCollapsible from '@/Components/FilterCollapsible';
 export default function ListingPage() {
   return (
     <>
       <header>
         <Header />
       </header>
-      <form className="flex flex-row gap-2 max-w-[800px] ml-auto mr-auto rounded-3xl shadow-xl border-4 p-3 mt-6">
+      <form className="flex flex-row gap-2 w-[350px] md:w-[800px] ml-auto mr-auto rounded-3xl shadow-xl border-4 p-3 mt-6">
         <div className=" flex-col flex md:flex-row w-full items-center md:justify-between gap-4">
           <div className="w-full flex flex-row items-center">
             <Search className=" md:w-[50px] mr-2 md:mr-0 " />
@@ -33,12 +35,18 @@ export default function ListingPage() {
           </Button>
         </div>
       </form>
-      <main className="p-12 flex flex-row">
-        <div className="w-[300px]">
+      {/* <div className='mt-2 md:mt-0'>
+        <DashSearch />
+      </div> */}
+      <main className="p-8 flex flex-col md:flex-row">
+        <div className=" hidden md:block md:w-[300px]">
           <FilterCard />
         </div>
-        <div className='p-4'>
-         <JobComponent/>
+        <div className="flex md:w-[300px] md:hidden">
+          <FilterCollapsible/>
+        </div>
+        <div className="md:p-4 ">
+          <JobComponent />
         </div>
       </main>
     </>

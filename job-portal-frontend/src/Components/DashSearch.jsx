@@ -13,7 +13,7 @@ import { MapPin, Search } from "lucide-react";
 export default function DashSearch() {
   return (
     <Card className="shadow-none border-0 bg-secondary">
-      <CardHeader>
+      <CardHeader className="hidden md:block">
         <CardTitle className=" text-3xl md:text-5xl text-center">
           Find your dream job
         </CardTitle>

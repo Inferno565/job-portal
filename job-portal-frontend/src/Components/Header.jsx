@@ -10,6 +10,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -30,7 +31,7 @@ import ThemeToggle from "./ThemeToggle";
 export default function Header() {
   return (
     <>
-      <div className="flex flex-row p-4 justify-between align-middle  shadow-lg">
+      <div className="flex flex-row p-4 justify-between align-middle shadow-lg">
         <div className="w-[50px]">
           <img src="src\assets\logo.png" alt="" />
         </div>
