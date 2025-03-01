@@ -22,8 +22,7 @@ export default function JobPage() {
           <CardHeader>
             <CardTitle>Product Details</CardTitle>
             <CardDescription>
-              Lipsum dolor sit amet, consectetur adipiscing elit
-            </CardDescription>
+Some desceriptin about the job            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid gap-6">
