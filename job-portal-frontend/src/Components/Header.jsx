@@ -56,17 +56,14 @@ export default function Header() {
                   <NavigationMenuTrigger className="bg-transparent ">
                     For Employer
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="flex flex-col p-3">
-                    <NavigationMenuLink>
-                      <Link to="recruit/login" className="p-4 w-5 ">
-                        Login
-                      </Link>
+                  <NavigationMenuContent className="flex flex-col justify-between">
+                    <NavigationMenuLink className="p-4 hover:bg-slate-300">
+                      Login
                     </NavigationMenuLink>
+
                     <hr />
-                    <NavigationMenuLink>
-                      <Link to="recruit/register" className="p-4 w-5">
-                        Register
-                      </Link>
+                    <NavigationMenuLink className="p-4 hover:bg-slate-300">
+                      Register
                     </NavigationMenuLink>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -74,7 +71,7 @@ export default function Header() {
             </NavigationMenu>
             <ThemeToggle />
             {/* to be removed */}
-            
+
             {/* to be displayed if logged in */}
             {/* <DropdownMenu>
               <DropdownMenuTrigger asChild>
