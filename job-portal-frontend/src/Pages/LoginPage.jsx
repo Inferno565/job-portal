@@ -60,7 +60,7 @@ export default function LoginPage() {
             <Link to="/register" className="underline">
               Sign up
             </Link>
-          </div>
+          </div>x
         </div>
       </div>
     </div>

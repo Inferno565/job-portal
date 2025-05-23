@@ -5,6 +5,8 @@ import HomePage from "./Pages/HomePage";
 import RegisterPage from "./Pages/RegisterPage";
 import ListingPage from "./Pages/ListingPage";
 import JobPage from "./Pages/JobPage";
+import RecruitDashPage from "./Pages/RecruitDashPage";
+import ProfilePage from "./Pages/ProfilePage";
 function App() {
   return (
     <>
@@ -14,7 +16,9 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/listing" element={<ListingPage />} />
-          <Route path="/viewJob" element={<JobPage/>} />
+          <Route path="/viewJob" element={<JobPage />} />
+          <Route path="recruit/dash" element={<RecruitDashPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </Router>
     </>

@@ -80,7 +80,7 @@ const trendingJobs = [
 
 export default function JobComponent() {
   return (
-    <div className="py-10 sm:px-8 lg:px-8 md:w-[950px] w-[350px]">
+    // <div className="py-10 sm:px-8 lg:px-8 md:w-[950px] w-[350px]">
       <div>
         {/* <h2 className="text-3xl font-bold text-gray-900 mb-6">Trending Jobs</h2> */}
         <div className="flex flex-col gap-3">
@@ -141,6 +141,6 @@ export default function JobComponent() {
           ))}
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
